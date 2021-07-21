@@ -1,0 +1,883 @@
+/* ** Portfolio Page */
+.page-portfolio {
+    .projects {
+        padding: 70px 0 6em 0;
+    }
+    *:focus, *:active, *:hover {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+  .projects>img, .projects>picture img {
+    margin-left: auto;
+    display: block;
+    margin-top: -14px;
+    max-width: 728px;
+    width: 100%;
+  }
+    @media only screen and (max-width: 1260px)
+    {.projects>img, .projects>picture img {
+        max-width: 528px;
+    }}
+    @media only screen and (max-width: 1450px)
+    {.projects>img, .projects>picture img {
+        max-width: 628px;
+    }}
+    .our_works_header 
+    {
+        width: 45%;
+        margin: -545px 0 180px 280px;
+    }
+    @media only screen and (max-width: 1260px)
+    {.our_works_header {
+        margin-top: -220px;
+    }}
+    @media only screen and (max-width: 1450px)
+    {.our_works_header {
+        margin-top: -375px;
+        margin-left: 80px;
+    }}
+    @media only screen and (max-width: 1700px)
+    {.our_works_header {
+        margin-top: -305px;
+        margin-left: 180px;
+    }}
+    @media only screen and (max-width: 815px)
+    {
+        .our_works_header 
+        {
+        margin: 0;
+        padding: 0 20px;
+        width: calc(100% - 40px);
+        }
+    } 
+
+    @media only screen and (max-width: 1260px)
+    {.our_works_header>h1 {
+        font-size: 65px;
+        margin: 0 0 35px 0;
+    }}
+    @media only screen and (max-width: 1450px)
+    {.our_works_header>h1 {
+        font-size: 75px;
+        margin: 0 0 28px 0;
+    }}
+    .our_works_header>h1 {
+        font-size: 85px;
+        font-weight: 600;
+        margin: 0 0 58px 0;
+        display: block;
+        text-align: left;
+    }
+    .projects h1 {
+        margin: 1.3em 0 1em 0;
+        font-size: 3em;
+        font-weight: normal;
+    }
+    .projects h1, .projects h2, .projects p 
+    {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+
+    @media only screen and (max-width: 1260px)
+    {.our_works_header>h3 {
+        font-size: 18px;
+    }}
+    @media only screen and (max-width: 1450px)
+    {.our_works_header>h3 {
+        font-size: 21px;
+    }}
+    .our_works_header>h3 {
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 1.4;
+    }
+    h3 {
+        margin: 0.4em 0;
+        font-size: 2.1em;
+    }
+
+
+    #projects.flexbox {
+        width: 72%;
+        margin-top: 36px;
+        display: none;
+    }
+    .projects .flexbox 
+    {
+        justify-content: center;
+    }
+    .flexbox 
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    .center {
+        text-align: center;
+    }
+    @media only screen and (max-width: 1024px) and (min-width: 816px)
+    {.flexbox {
+        justify-content: space-around;
+    }}
+    .projects .tags 
+    {
+        width: 73%;
+        max-width: 1068px;
+        margin: 0 auto 28px auto;
+        justify-content: center;
+    }
+    *:focus, *:active, *:hover 
+    {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }  
+    @media only screen and (max-width: 815px) and (min-width: 481px)
+    {#projects, .projects .tags {
+        width: 100%;
+    }}
+    @media only screen and (max-width: 815px)
+    {#projects.flexbox, .projects .tags {
+        width: 100%;
+        max-width: 600px;
+        margin: 1em auto;
+        justify-content: center;
+    }}
+    .projects .tags ul 
+    {
+        line-height: 1.5;
+        column-count: 6;
+    }
+    ol, ul 
+    {
+        list-style: none;
+    }
+    .center 
+    {
+        text-align: center;
+    }
+    @media only screen and (max-width: 815px)
+    {.projects .tags ul {
+        line-height: 1.5;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }}
+    .projects .tags li, .tags li:hover {
+        color: #535558;
+        background: transparent;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .tags li:hover{
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 1450px)
+    {.projects .tags li, .projects .tags li {
+        margin-bottom: 10px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.projects .tags li, .projects .tags li:hover {
+        padding: 0.3em 0 0 0;
+        width: auto;
+        font-size: 1.2em;
+    }}
+    @media only screen and (max-width: 815px)
+    {.projects .tags li, .projects .tags li:hover, .blog .tags li, .blog .categories li, .blog .tags li:hover, .blog .categories li:hover {
+        display: inline-block;
+        padding: 0 0.8em 0 0;
+        color: #535558;
+        border: none;
+        background: transparent;
+    }}
+    
+    .tags li.active div {
+        border-color: #eb1c23;
+        color: #000000;
+    }
+
+
+
+    /**Box***/
+    .blog-post {
+        position: relative;
+        width: 30%;
+        background: #FFF;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        margin: 0 35px 55px 0;
+    }
+    .projects #blog 
+    {
+        width: 85%;
+        max-width: 1337px;
+        margin: 0 auto;
+        padding-bottom: 5em;
+        padding-top: 39px;
+    }
+    .blog #blog 
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 5em;
+    }
+    .projects #blog .content 
+    {
+        padding-bottom: 0px;
+    }
+    .blog .content {
+        justify-content: center;
+    }
+    .projects .flexbox {
+        justify-content: center;
+    }
+    .blog-post .image {
+        width: 100%;
+        height: 270px;
+        overflow: hidden;
+    }
+    .blog-post .image img {
+        position: relative;
+        min-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .projects .content {
+        display: flex;
+        padding-bottom: 5em;
+    }
+    .blog .blog-post {
+        position: relative;
+        height: 530px;
+        min-height: 500px;
+        max-width: 460px;
+        margin: 0 35px 55px 0;
+        color: #FFF;
+        overflow: hidden;
+    }
+    .related-post-header a {
+        margin: 22px 15px 12px 0;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #414141;
+        display: block;
+        text-decoration: none;
+        outline: none;
+    }
+    .projects #blog .content {
+        padding-bottom: 0px;
+    }
+
+    .blog-post .info {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        font-size: 19px;
+        color: #636363;
+    }
+    .info .wrapper {
+        position: relative;
+        margin: -11px -1px;
+        font-size: 13px;
+    }
+    .viewed {
+        position: absolute;
+        right: 0;
+        margin-top: -15px;
+    }
+    /****Blog****/
+    @media only screen and (max-width: 1024px) and (min-width: 816px)
+    {.projects .blog-post {
+        width: 45%;
+    }}
+    @media only screen and (max-width: 815px) and (orientation: landscape)
+    {.blog .blog-post {
+        width: 49%;
+        margin-right: 2%!important;
+    }}
+    @media only screen and (max-width: 815px)
+    {.blog .blog-post {
+        width: 100%;
+        margin-right: 0;
+    }}
+    @media only screen and (max-width: 430px)
+    {.blog .blog-post {
+        height: auto;
+    }}
+    /**Image*/
+    @media only screen and (max-width: 815px)
+    {.blog-post .image {
+        height: 212px;
+    }}
+
+    /**Content**/
+    @media only screen and (max-width: 1500px)
+    {.blog-post .content {
+        font-size: 16px;
+    }}
+    @media only screen and (max-width: 815px) and (min-width: 481px)
+    {.projects #blog .content {
+        display: flex;
+    }}
+    @media only screen and (max-width: 815px) and (min-width: 481px)
+    {.projects .content {
+        display: block;
+    }}
+    @media only screen and (max-width: 430px)
+    {.blog-post h3 a, .related-post-header a, .blog-post .content {
+        height: auto;
+    }}
+
+
+
+    .paging
+    {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 25px;
+    }
+
+    /***Portfolio Details***/
+    .project .page 
+    {
+        padding-top: 95px; 
+    }
+    @media only screen and (max-width: 815px)
+    {.blue_header {
+        padding: 75px 0;
+    }}
+    
+    .blue_header 
+    {
+        position: relative;
+        width: 100%;
+        background-color: #2557f5;
+        color: #ffffff;
+        padding: 41px 0;
+        font-size: 18px;
+    }
+    .blue_header>span {
+        margin-left: 15.5%;
+    }
+    @media only screen and (max-width: 815px)
+    {.blue_header>span {
+        display: none;
+    }}
+    .blue_header>img {
+        position: absolute;
+        right: 0;
+        top: -115%;
+        // z-index: 1000;
+        max-width: 1000px;
+        width: 100%;
+    }
+    @media only screen and (max-width: 576px)
+    {.blue_header>img {
+        max-width: 100%;
+        top: 0;
+    }}
+    @media only screen and (max-width: 815px)
+    {.blue_header>img{
+        max-width: 91%;
+        top: -25%;
+    }}
+    @media only screen and (max-width: 950px)
+    {.blue_header>img{
+        max-width: 550px;
+        top: -45%;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.blue_header>img{
+        max-width: 650px;
+        top: -60%;
+    }}
+    @media only screen and (max-width: 1440px)
+    {.blue_header>img{
+        max-width: 800px;
+        top: -85%;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.blue_header>img{
+        max-width: 900px;
+        top: -100%;
+    }}
+    
+    /**content**/
+    .project.page>.content {
+        padding-top: 300px;
+    }
+    @media only screen and (max-width: 290px)
+    {.project.page>.content {
+        padding-top: 270px;
+    }}
+    @media only screen and (max-width: 390px)
+    {.project.page>.content {
+        padding-top: 250px;
+    }}
+    @media only screen and (max-width: 430px)
+    {.project.page>.content {
+        padding-top: 300px;
+    }}
+    @media only screen and (max-width: 510px)
+    {.project.page>.content {
+        padding-top: 370px;
+    }}
+    @media only screen and (max-width: 600px)
+    {.project.page>.content {
+        padding-top: 450px;
+    }}
+    @media only screen and (max-width: 670px)
+    {.project.page>.content {
+        padding-top: 550px;
+    }}
+    @media only screen and (max-width: 740px)
+    {.project.page>.content {
+        padding-top: 600px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project.page>.content {
+        padding-top: 590px;
+    }}
+    @media only screen and (max-width: 1120px)
+    {.project.page>.content {
+        padding-top: 150px;
+    }}
+    @media only screen and (max-width: 1440px)
+    {.project.page>.content {
+        padding-top: 200px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content {
+        padding-top: 280px;
+    }}
+    
+
+
+
+    
+    /**Header block*/
+    .project.page>.content>.header-block {
+        margin-left: 297px;
+        width: 40%;
+        z-index: 1001;
+        position: relative;
+    }
+    
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.header-block {
+        width: 88%;
+        margin-left: 6%;
+    }}
+    @media only screen and (max-width: 1100px)
+    {.project.page>.content>.header-block {
+        margin-left: 50px;
+    }}
+    @media only screen and (max-width: 1120px)
+    {.project.page>.content>.header-block {
+        margin-left: 100px;
+        width: 45%;
+    }}
+    @media only screen and (max-width: 1440px)
+    {.project.page>.content>.header-block {
+        margin-left: 130px;
+    }}
+    @media only screen and (max-width: 1770px)
+    {.project.page>.content>.header-block {
+        margin-left: 220px;
+    }}
+    
+    
+    .project.page>.content h1, .project.page>.content .project-header 
+    {
+        font-size: 85px;
+        font-weight: 600;
+        margin-bottom: 45px;
+        display: block;
+    }
+    @media only screen and (max-width: 1770px)
+    {.project.page>.content>.header-block {
+        margin-left: 220px;
+    }}
+    @media only screen and (max-width: 1440px)
+    {.project.page>.content>.header-block {
+        margin-left: 130px;
+    }}
+    @media only screen and (max-width: 1120px)
+    {.project.page>.content>.header-block {
+        margin-left: 100px;
+        width: 45%;
+    }}
+    @media only screen and (max-width: 1100px)
+    {.project.page>.content>.header-block {
+        margin-left: 50px;
+    }}
+    
+    .project .page p 
+    {
+        margin: 25px 0 25px 0;
+    }
+    @media only screen and (max-width: 1260px)
+    {.project p {
+        font-size: 17px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project p, .project.page>.content ul>li {
+        font-size: 22px;
+    }}
+    .project .peculiar 
+    {
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        justify-content: normal;
+        padding: 6px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    @media only screen and (max-width: 1100px)
+    {.project.page .peculiar {
+        padding-left: 0;
+    }}
+    @media only screen and (max-width: 1024px) and (min-width: 816px)
+    {.project .peculiar {
+        padding-left: 40px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project .peculiar {
+        padding: 19px 0;
+        align-items: center;
+        justify-content: center;
+    }}
+    .project .peculiar .peculiar_block:first-child {
+        margin-right: 20px;
+    }
+    .project .peculiar .peculiar_block {
+        display: flex;
+        flex-flow: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        text-transform: uppercase;
+        margin-left: 3px;
+        border-right: 2px solid #000;
+        padding-right: 47px;
+        margin-right: 20px;
+    }
+    @media only screen and (max-width: 1260px)
+    {.project .peculiar .peculiar_block:first-child {
+        margin-right: 15px;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project .peculiar .peculiar_block {
+        padding-right: 15px;
+        margin-right: 15px;
+    }}
+    @media only screen and (max-width: 1440px)
+    {.project .peculiar .peculiar_block {
+        padding-right: 20px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project .peculiar .peculiar_block {
+        flex-flow: column;
+        padding-right: 12px;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 10px;
+        flex-basis: 50%;
+        justify-content: flex-start;
+    }}
+    
+    
+    @media only screen and (max-width: 815px)
+    {.project .peculiar .peculiar_number {
+        font-size: 50px;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: 500;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project .peculiar .peculiar_number {
+        font-weight: 300;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project .peculiar .peculiar_number {
+        font-size: 35px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project .peculiar .peculiar_number {
+        font-size: 40px;
+    }}
+    .project .peculiar .peculiar_number 
+    {
+        margin-right: 15px;
+        font-size: 4em;
+        font-weight: 400;
+        position: relative;
+    }
+    .project .peculiar .peculiar_text 
+    {
+        display: flex;
+        flex-flow: column;
+        margin-left: 6px;
+        font-size: 17px;
+    }
+    @media only screen and (max-width: 1670px)
+    {.project .peculiar .peculiar_text, .project .peculiar .peculiar_multiple>span {
+        font-size: 13px;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project .peculiar .peculiar_text {
+        font-size: 11px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project .peculiar .peculiar_text {
+        align-self: center;
+        margin-left: 0;
+    }}
+    
+    .project .peculiar .peculiar_block:last-child {
+        border-right: 0;
+        margin-right: 0;
+    }
+    @media only screen and (max-width: 815px)
+    {.project .peculiar .peculiar_block:last-child {
+        padding-right: 0;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project .peculiar .peculiar_block {
+        padding-right: 15px;
+        margin-right: 15px;
+    }}
+    .peculiar .peculiar_multiple {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .peculiar .peculiar_multiple>span {
+        margin-right: 0;
+        font-size: 17px;
+        font-weight: 300;
+        position: relative;
+        line-height: 1.5;
+    }
+    @media only screen and (max-width: 1670px)
+    {.project .peculiar .peculiar_text, .project .peculiar .peculiar_multiple>span {
+        font-size: 13px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project .peculiar .peculiar_multiple>span {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: -2px;
+    }}
+    
+    
+    /**
+    Right Block
+    ***/
+    .project.page>.content>.right-block {
+        display: flex;
+        margin-top: 35px;
+        margin-left: 138px;
+        align-items: center;
+    }
+    @media only screen and (max-width: 1100px)
+    {.project.page>.content>.right-block, .project.page>.content>.left-block {
+        margin-left: 50px;
+    }}
+    @media only screen and (max-width: 1120px)
+    {.project.page>.content>.right-block, .project.page>.content>.left-block {
+        margin-left: 100px;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.right-block {
+        flex-flow: column;
+        margin-top: 44px;
+        margin-left: 0;
+    }}
+    .project.page>.content>.right-block>img, .project.page>.content>.right-block>picture img {
+    
+        width: 100%;
+        max-width: 620px;
+    }
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.right-block>img, .project.page>.content>.right-block>picture img {
+        width: 66%;
+        max-width: none;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project.page>.content>.right-block>img, .project.page>.content>.right-block>picture img {
+        max-width: 320px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content>.right-block>img, .project.page>.content>.right-block>picture img {
+        max-width: 400px;
+    }}
+    .project.page>.content>.right-block>span {
+        margin-left: 8%;
+        width: 45%;
+    }
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.right-block>span {
+        width: 89%;
+        margin-top: 54px;
+        margin-left: 0;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content>.right-block>span 
+        {
+        width: 60%;
+    }}
+    @media only screen and (max-width: 815px)
+    {.project.page>.content h1, .project.page>.content .project-header {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project.page>.content h1, .project.page>.content .project-header {
+        font-size: 55px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content h1, .project.page>.content .project-header {
+        font-size: 70px;
+    }}
+    .project.page>.content h1, .project.page>.content .project-header 
+    {
+        font-size: 85px;
+        font-weight: 600;
+        margin-bottom: 45px;
+        display: block;
+    }
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.right-block>span p, .project.page>.content>.left-block>span p {
+        margin: 10px 0 30px 0;
+        line-height: 1.1;
+    }
+    .project.page p {
+        margin: 25px 0 25px 0;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project p {
+        font-size: 17px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project p, .project.page>.content ul>li {
+        font-size: 22px;
+    }}
+    @media only screen and (max-width: 815px)
+    {p {
+        margin: 30px 0 30px 0;
+        font-size: 17px;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: 1.3;
+    }}
+    
+    
+    /**HeaderLeft***/
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.left-block {
+        margin-left: 0;
+        margin-top: 20px;
+        flex-flow: column-reverse;
+    }}
+    @media only screen and (max-width: 1100px)
+    {.project.page>.content>.right-block, .project.page>.content>.left-block {
+        margin-left: 50px;
+    }}
+    @media only screen and (max-width: 1120px)
+    {.project.page>.content>.right-block, .project.page>.content>.left-block {
+        margin-left: 100px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content>.left-block {
+        margin-top: -125px;
+    }}
+    .project.page>.content>.left-block 
+    {
+        display: flex;
+        margin-left: 172px;
+        align-items: center;
+        margin-top: -225px;
+        justify-content: flex-end;
+    }
+    .project.page>.content>.left-block>span 
+    {
+        margin-right: 75px;
+        margin-top: 145px;
+        width: 50%;
+    }
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.left-block>span {
+        margin-right: 0;
+        margin-top: 65px;
+        width: 89%;
+    }}
+    
+    @media only screen and (max-width: 815px)
+    {.project.page>.content h1, .project.page>.content .project-header {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project.page>.content h1, .project.page>.content .project-header {
+        font-size: 55px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content h1, .project.page>.content .project-header {
+        font-size: 70px;
+    }}
+    .project.page>.content h1, .project.page>.content .project-header {
+        font-size: 85px;
+        font-weight: 600;
+        margin-bottom: 45px;
+        display: block;
+    }
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.right-block>span p, .project.page>.content>.left-block>span p {
+        margin: 10px 0 30px 0;
+        line-height: 1.1;
+    }}
+    .project.page p {
+        margin: 25px 0 25px 0;
+    }
+    @media only screen and (max-width: 1260px)
+    {.project p {
+        font-size: 17px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project p, .project.page>.content ul>li {
+        font-size: 22px;
+    }}
+    @media only screen and (max-width: 815px)
+    {
+        p {
+            margin: 30px 0 30px 0;
+            font-size: 17px;
+            letter-spacing: normal;
+            word-spacing: normal;
+            line-height: 1.3;
+        }
+    }
+    @media only screen and (max-width: 815px)
+    {.project.page>.content>.left-block>img, .project.page>.content>.left-block>picture img {
+        width: 90%;
+        margin-left: auto;
+    }}
+    @media only screen and (max-width: 1260px)
+    {.project.page>.content>.left-block>img, .project.page>.content>.left-block>picture img {
+        max-width: 400px;
+    }}
+    @media only screen and (max-width: 1670px)
+    {.project.page>.content>.left-block>img, .project.page>.content>.left-block>picture img {
+        max-width: 500px;
+    }}
+    .project.page>.content>.left-block>img, .project.page>.content>.left-block>picture img {
+        max-width: 800px;
+    }
+}

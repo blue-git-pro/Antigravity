@@ -1,0 +1,66 @@
+.page-client-jobs {
+  padding-bottom: 50px;
+
+  .client-jobs-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+    .button-new-job {
+      font-weight: bold;
+      color: #28c0f1;
+    }
+  }
+
+  .title-filter{
+    padding: 0 16px 16px 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .ant-collapse-item > .ant-collapse-header {
+    padding-left: 0;
+  }
+
+  .ant-collapse-content > .ant-collapse-content-box {
+    padding-left: 0;
+  }
+
+  .client-jobs-content {
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+
+    .jobs-content-header {
+      padding: 15px 20px 15px;
+      border-bottom: solid 1px lightgray;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .list-item-job {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0,0,0,0.1);
+    }
+
+    .ant-row {
+      width: 100%;
+    }
+
+    .title-name {
+      color: @success-color;
+    }
+
+    .row-title {
+      font-weight: bold;
+    }
+  }
+}

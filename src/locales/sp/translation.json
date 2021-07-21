@@ -1,0 +1,18 @@
+{
+  "en": "Inglés",
+  "sp": "Español",
+  "menu": {
+    "Projects": "Proyectos",
+    "Token": "Simbólico",
+    "Partners": "Socios",
+    "News": "Noticias",
+    "Login": "Iniciar sesión",
+    "Register": "Registrarse",
+    "language": "English"
+  },
+  "home": {
+    "The Future is Now" : "El futuro es ahora",
+    "Next Generation of Transportation": "Nueva generación de transporte",
+    "The First Tokenized Space Travel Agency": "La primera agencia de viajes espaciales tokenizada"
+  }
+}
