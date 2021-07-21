@@ -8,11 +8,9 @@ import i18n from "./i18n";
 
 ReactDOM.render(
   <I18nextProvider i18n={i18n}>
-  
     <React.StrictMode>
       <App />
     </React.StrictMode>
-
   </I18nextProvider>,
   document.getElementById('root')
 );
